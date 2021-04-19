@@ -18,18 +18,19 @@ new = []
 for d in data:
 	if len(d) < 100:
 		new.append(d)
-print('總共有', len(d), '筆留言長度小於100')
+print('總共有', len(new), '筆留言長度小於100')
 print(new[0])
 print(new[1])
 
 good = []
-for d in data:
-	if 'good' in data:
-		good.append(d)
+for m in data:
+	if 'good' in m:
+		good.append(m)
 print('總共有', len(good), '筆留言提到good')
 
 hi = []
-for d in data:
-	if 'hi' in data:
-		hi.append(d)
-print('總共有', len(good), '筆留言提到hi')
+for h in data:
+	if 'hi' in h:
+		hi.append(h)
+print('總共有', len(hi), '筆留言提到hi')
+
